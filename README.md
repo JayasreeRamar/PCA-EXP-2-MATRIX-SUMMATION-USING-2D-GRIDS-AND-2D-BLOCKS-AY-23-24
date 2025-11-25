@@ -48,8 +48,6 @@ Google Colab with NVCC Compiler
 
 ## PROGRAM:
 ```
-!pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
-%load_ext nvcc4jupyter
 %%cuda
 #include <cuda_runtime.h>
 #include <stdio.h>
@@ -265,9 +263,9 @@ return (0);
 ```
 ## OUTPUT:
 
-![Screenshot 2025-04-22 132524](https://github.com/user-attachments/assets/5833682e-88ab-4d5b-8d16-811186330134)
+<img width="1051" height="193" alt="Screenshot 2025-11-25 092231" src="https://github.com/user-attachments/assets/32eede07-319d-4953-b9db-922a2bd9cc84" />
 
 
 ## RESULT:
 
-The host took 0.847317 seconds to complete it’s computation, while the GPU outperforms the host and completes the computation in 0.053341 seconds. Therefore, float variables in the GPU will result in the best possible result. Thus, matrix summation using 2D grids and 2D blocks has been performed successfully.
+The host took 0.841865 seconds to complete it’s computation, while the GPU outperforms the host and completes the computation in 0.081716 seconds. Therefore, float variables in the GPU will result in the best possible result. Thus, matrix summation using 2D grids and 2D blocks has been performed successfully.
